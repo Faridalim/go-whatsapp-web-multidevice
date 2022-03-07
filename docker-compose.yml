@@ -1,0 +1,9 @@
+version: "3"
+services:
+  wa_bot:
+    build: .
+    container_name: wa_bot
+    restart: always
+    ports:
+      - "3001:3001"
+    network_mode: bridge
